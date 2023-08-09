@@ -47,3 +47,6 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 DEVICE_MANIFEST_FILE += \
     device/google/gs201/android.hardware.security.rkp-service.citadel.xml \
     device/google/gs201/manifest_radio_ds.xml
+
+# Init
+TARGET_INIT_VENDOR_LIB := //device/google/gs201:libinit_gs201
