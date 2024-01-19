@@ -27,6 +27,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Lineage Health
+include hardware/google/pixel/lineage_health/device.mk
+
 # Overlays
 PRODUCT_PACKAGES += \
     NetworkStackOverlay
@@ -34,6 +37,9 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     TelephonyOverlayGS201
+
+# Touch
+include hardware/google/pixel/touch/device.mk
 
 # Wireless Charger
 include device/google/gs-common/wireless_charger/wireless_charger.mk
